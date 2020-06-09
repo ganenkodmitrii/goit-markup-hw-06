@@ -60,7 +60,7 @@
           <h1 class="hero-title">
             эффективные решения<br />для вашего бизнеса
           </h1>
-          <a href="#" class="button">Заказать услугу</a>
+          <button class="button" data-open-modal>Заказать услугу</button>>
         </section>
       </div>
       <!--Достоинство и преимущество -->
@@ -517,6 +517,14 @@
         </div>
         <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
+
+      <!-- Модалка -->
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal"></div>
+        <button class="button" data-close-modal>Закрыть</button>
+      </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
