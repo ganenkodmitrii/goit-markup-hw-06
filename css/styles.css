@@ -967,6 +967,8 @@ body {
   justify-content: center;
   width: 30px;
   height: 30px;
+
+  cursor: pointer;
   border-radius: 50%;
   background-color: var(--primary-white-color);
   border: 1px solid transparent;
