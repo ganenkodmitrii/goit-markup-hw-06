@@ -58,9 +58,9 @@
       <div class="hero-overlay">
         <section class="hero">
           <h1 class="hero-title">
-            эффективные решения<br />для вашего бизнеса
+            эффективные решения для вашего бизнеса
           </h1>
-          <button class="button" data-open-modal>Заказать услугу</button>>
+          <button class="button" data-modal-open>Заказать услугу</button>>
         </section>
       </div>
       <!--Достоинство и преимущество -->
@@ -174,10 +174,10 @@
                 src="./images/foto-John-Smith.jpg"
                 width="270"
                 height="260"
-                alt="фото Джона Смита"
+                alt="фото Николай Кучеренко"
               />
               <div class="content-team">
-                <h3 class="list-team">John Smith</h3>
+                <h3 class="list-team">Николай Кучеренко</h3>
                 <p class="prof">Product Designer</p>
                 <ul class="socials list">
                   <li class="icons">
@@ -233,10 +233,10 @@
                 src="./images/foto-Marta-Stewart.jpg"
                 width="270"
                 height="260"
-                alt="фото Марты Стюарт"
+                alt="фото Ольга Иванова"
               />
               <div class="content-team">
-                <h3 class="list-team">Marta Stewart</h3>
+                <h3 class="list-team">Ольга Иванова</h3>
                 <p class="prof">Frontend Developer</p>
                 <ul class="socials list">
                   <li class="icons">
@@ -292,10 +292,10 @@
                 src="./images/foto-Robert-Jakis.jpg"
                 width="270"
                 height="260"
-                alt="фото Роберта Джекиса"
+                alt="фото Андрей Шевченко"
               />
               <div class="content-team">
-                <h3 class="list-team">Robert Jakis</h3>
+                <h3 class="list-team">Андрей Шевченко</h3>
                 <p class="prof">Marketing</p>
                 <ul class="socials list">
                   <li class="icons">
@@ -348,10 +348,10 @@
                 src="./images/foto-Martin-Doe.jpg"
                 width="270"
                 height="260"
-                alt="фото Мартина Доу"
+                alt="фото Иван Николаев"
               />
               <div class="content-team">
-                <h3 class="list-team">Martin Doe</h3>
+                <h3 class="list-team">Иван Николаев</h3>
                 <p class="prof">UI Designer</p>
                 <ul class="socials list">
                   <li class="icons">
@@ -506,12 +506,19 @@
           <div class="subscribe-box">
             <b class="subscribe">Подпишитесь на рассылку</b>
             <div class="subscribe-input">
-              <a href="#" class="subscribe-btn button"
-                >Подписаться
+              <label
+                ><input
+                  type="email"
+                  class="mail-input"
+                  name="email"
+                  placeholder="E-mail"
+              /></label>
+              <button type="submit" class="subscribe-btn button">
+                Подписаться
                 <svg class="icon-send" width="24" height="24">
                   <use href="./images/sprite.svg#send"></use>
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -519,9 +526,85 @@
       </div>
 
       <!-- Модалка -->
-      <div class="backdrop is-hidden" data-backdrop>
-        <div class="modal"></div>
-        <button class="button" data-close-modal>Закрыть</button>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form class="form">
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <ul class="list form-field">
+              <li class="form-list">
+                <label class="form-label"
+                  ><input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    placeholder=" "
+                  />
+                  <span class="form-write">Имя</span>
+                  <svg class="label-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#person"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="form-list">
+                <label class="form-label"
+                  ><input
+                    class="form-input"
+                    type="tel"
+                    name="telephone"
+                    placeholder=" "
+                  /><span class="form-write">Телефон</span>
+                  <svg class="label-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="form-list">
+                <label class="form-label"
+                  ><input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                  /><span class="form-write">Почта</span>
+                  <svg class="label-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#email"></use>
+                  </svg>
+                </label>
+              </li>
+              <li class="form-list">
+                <label class="form-label">
+                  <textarea
+                    class="form-textarea"
+                    name="comment"
+                    rows="10"
+                    placeholder=" "
+                  ></textarea
+                  ><span class="textarea-write">Комментарий</span></label
+                >
+              </li>
+            </ul>
+
+            <label class="form-policy"
+              ><input class="checkbox-policy" type="checkbox" name="policy" />
+              <span class="accept-icon"></span>
+              <span class="form-accept"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="accept-accent">Условия договора</a></span
+              >
+            </label>
+
+            <button type="submit" class="button button-check">
+              Отправить
+            </button>
+
+            <button class="form-button" data-modal-close>
+              <svg class="icon-close" width="18" height="18">
+                <use href="./images/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
