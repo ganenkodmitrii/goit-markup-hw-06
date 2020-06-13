@@ -746,7 +746,7 @@ body {
 
   opacity: 1;
 
-  transition: opacity 2550ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
@@ -769,7 +769,7 @@ body {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
-  transition: transform 2550ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
 }
 
 .form {
